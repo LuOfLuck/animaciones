@@ -1,0 +1,76 @@
+.header, .bloque, .bloque-extra, .bloque-dentro{
+    opacity: 0;
+}
+
+.active{
+    position: relative;
+    bottom: -100px;
+    transition: 1s ease;
+    opacity: 100%;
+    transform:translateY(-100px);
+}
+.main > .row, .bloque-extra{
+    height: 40vh;
+}
+
+.border{
+    border-radius: 10px;
+}
+.bloque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloque:active{
+    position:static;
+    transform:translate(100px, 100px);
+}
+
+.aparecer-arriba{
+    
+    position: relative;
+    top: -100px;
+    transition: .5s linear;
+    opacity: 100%;
+    transform:translateY(100px);
+    
+}
+.aparecer-izquierda{
+    position: relative;
+    left: -100px;
+    transition: .5s linear;
+    opacity: 100%;
+    transform:translateX(100px);
+    
+}
+.aparecer-derecha{
+    position: relative;
+    right: -100px;
+    transition: .5s linear;
+    opacity: 100%;
+    transform:translateX(-100px);
+    
+}
+.aparecer-abajo{
+    position: relative;
+    bottom: -100px;
+    transition: .5s linear;
+    opacity: 100%;
+    transform:translateY(-100px);
+    
+}
+.aparecer{
+    position: relative;
+    right: -100px;
+    transition: .5s linear;
+    opacity: 100%;
+    transform:translateX(-100px);
+    
+}
+
+
+@media(min-width:500px){
+    h3{
+        font-size: 70%;
+    }
+}
