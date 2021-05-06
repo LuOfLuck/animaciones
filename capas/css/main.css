@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+.capa-1, .capa-2, .capa-3{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2.5s linear;
+}
+.capa-1{
+    background-color: blue;
+}
+.capa-2{
+    background-color: green;
+}
+.capa-3{
+    background-color: orange;
+}
+.sub-capa{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    transition: 2s linear;
+}
+.capa-2 > .sub-capa{
+    position: absolute;
+    margin:auto;
+}
+.capa-2 > .sub-capa-1{
+    height: 0;
+    width: 0;
+    top:200px;
+    left: 400px;
+    background-color: transparent;
+    border-top: 50px solid blue;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid blue;
+    transform: rotate(-45deg);
+}
+.capa-2 > .sub-capa-2, .capa-2 > .sub-capa-3{
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    border-top: 75px solid orange;
+    border-bottom: 75px solid transparent;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    
+}
+.capa-2 > .sub-capa-2{
+    top: 280px;
+    left: 445px;
+    transform: rotate(45deg);
+}
+.capa-2 > .sub-capa-3{
+    top: 280px;
+    left: 305px;
+    transform: rotate(-45deg);
+}
+.capa-2 > .sub-capa-4{
+    height: 105px;
+    width: 140px;
+    top: 250px;
+    left: 380px;
+    background-color: red;
+}
+.capa-3 > .sub-capa-1{
+    border-radius: 50% 0 0 50%;
+}
+.capa-3 > .sub-capa-3{
+    border-radius: 0 50% 50% 0;
+}
